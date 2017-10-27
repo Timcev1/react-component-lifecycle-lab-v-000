@@ -14,7 +14,13 @@ class App extends React.Component {
   }
 
   // TODO: componentWillMount()
+  componentWillMount(){
+    this.startInterval()
+  }
   // TODO: componentDidMount()
+  componentWillUnmount(){
+    this.cleanUpInterval()
+  }
   // TODO: componentWillUnmount()
 
   startInterval = () => {
