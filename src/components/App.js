@@ -16,7 +16,7 @@ class App extends React.Component {
   // TODO: componentWillMount()
 
   componentDidMount(){
-    this.startInterval
+    this.startInterval()
   }
 
   // TODO: componentDidMount()
