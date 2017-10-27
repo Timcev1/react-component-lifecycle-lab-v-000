@@ -11,7 +11,13 @@ class TweetWall extends React.Component {
   }
 
   // TODO: componentWillMount()
+  componentWillMount(){
+    this.startInterval()
+  }
   // TODO: shouldComponentUpdate()
+  componentWillUnmount(){
+    this.cleanUpInterval()
+  }
   // TODO: componentWillReceiveProps()
 
   render() {
